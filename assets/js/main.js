@@ -43,6 +43,8 @@
 			alignment: 'center'
 		});
 
+	
+
 	// Scrolly.
 		$('.scrolly').scrolly();
 
@@ -74,6 +76,9 @@
 					target: $body,
 					visibleClass: 'navPanel-visible'
 				});
+
+
+				
 
 	// Carousels.
 		$('.carousel').each(function() {
