@@ -9,11 +9,6 @@ $bono = $_POST['bono'];
 $ingreso = $_POST['ingreso'];
 
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
-
 $message = "Este mensaje fue enviado por: " . $name . " \r\n";
 $message .= "Su correo electronico es: " . $mail . " \r\n";
 $message .= "Teléfono de contacto es: " . $phone . " \r\n";
@@ -26,7 +21,7 @@ $message .= "Enviado el: " . date('d/m/Y', time());
 $para = 'dfgtoledo27@outlook.es';
 $asunto = 'Prueba pagina';
 
-mail($para, $asunto, utf8_decode($message), $header);
+mail($para, $asunto, $message);
 
-header("Location:index.html");
+
 ?>
