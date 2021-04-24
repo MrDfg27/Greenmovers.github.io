@@ -2682,8 +2682,15 @@ input, select, textarea {
 	overflow: hidden;
 	padding: 16px;
 	color: black;
-	text-align: justify;
+	text-align: center;
 }
+#footer3 h3{
+	text-align: center;
+	color: orange;
+	
+}
+
+
 
 
 
