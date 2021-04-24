@@ -9,23 +9,15 @@ $bono = $_POST['bono'];
 $ingreso = $_POST['ingreso'];
 
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+$header = "pruba";
 
-$message = "Este mensaje fue enviado por: " . $name . " \r\n";
-$message = "Su correo electronico es: " . $mail . " \r\n";
-$message = "Teléfono de contacto es: " . $phone . " \r\n";
-$message = "Lugar de residencia: " . $vive . " \r\n";
-$message = "Cuenta con lote propio: " . $lote . " \r\n";
-$message = "Su tipo de bono es: " . $bono . " \r\n";
-$message = "Su rango de ingreso familiar es: " . $ingreso . " \r\n";
+$mensaje = "Este mensaje fue enviado por: " . $name;
 
-$para = 'dfgtoledo27@outlook.es';
+$destinatario = 'dfgtoledo27@outlook.es';
 $asunto = 'Prueba pagina';
 
-mail($para, $asunto, $message, $header);
-
+mail($destinatario, $asunto, $mensaje, $header);
+echo "<script>alert('correo enviado')</script>";
+echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>";
 
 ?>
