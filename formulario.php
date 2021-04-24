@@ -15,12 +15,12 @@ $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 
 $message = "Este mensaje fue enviado por: " . $name . " \r\n";
-$message .= "Su correo electronico es: " . $mail . " \r\n";
-$message .= "Teléfono de contacto es: " . $phone . " \r\n";
-$message .= "Lugar de residencia: " . $vive . " \r\n";
-$message .= "Cuenta con lote propio: " . $lote . " \r\n";
-$message .= "Su tipo de bono es: " . $bono . " \r\n";
-$message .= "Su rango de ingreso familiar es: " . $ingreso . " \r\n";
+$message = "Su correo electronico es: " . $mail . " \r\n";
+$message = "Teléfono de contacto es: " . $phone . " \r\n";
+$message = "Lugar de residencia: " . $vive . " \r\n";
+$message = "Cuenta con lote propio: " . $lote . " \r\n";
+$message = "Su tipo de bono es: " . $bono . " \r\n";
+$message = "Su rango de ingreso familiar es: " . $ingreso . " \r\n";
 
 $para = 'dfgtoledo27@outlook.es';
 $asunto = 'Prueba pagina';
