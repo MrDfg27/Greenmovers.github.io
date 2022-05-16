@@ -2187,14 +2187,13 @@ input, select, textarea {
 		}
 
 		#header2 {
-			position: static;
-			background-image: url("../../images/ladrillos.jpg");
-			opacity: 0.9;
+			position: relative;
+			background-image: url("../../images/img2/atras1.jpg");
 			background-color:white;
 			background-size: cover;
 			background-position: center;
-			background-attachment: fixed;
-			color:#1C0920;
+			background-attachment:scroll;
+			color:white;
 			text-align: center;
 			font-weight: 600;
 			text-shadow: 2px 2px 8px;
@@ -2204,10 +2203,55 @@ input, select, textarea {
 		}
 		#header2 blockquote {
 			color: #ffff;
-			font-size: 2em;
-			line-height: 1em;
+			font-size: 40px;
+			position: relative;
 		}
-	
+		#header2:before {
+			content:'';
+			position: absolute;
+				top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0,0,0,0.2);
+		}
+
+
+
+		#header3 {
+			position: relative;
+			background-image: url("../../images/img2/atras4.jpg");
+			background-color:white;
+			background-size: cover;
+			background-position: center;
+			background-attachment:scroll;
+			color:white;
+			text-align: center;
+			font-weight: 600;
+			text-shadow: 2px 2px 8px;
+			padding: 4em 0 4em 0;
+			cursor: default;
+			
+		}
+		#header3 blockquote {
+			color: #ffff;
+			font-size: 40px;
+			position: relative;
+		}
+		#header3:before {
+			content:'';
+			position: absolute;
+				top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0,0,0,0.2);
+		}
+
+
+
+
+
 		#header1 {
 			position: static;
 			background-color:white;
@@ -2316,11 +2360,31 @@ input, select, textarea {
 
 
 
-	
+	#header4 {
+		position: relative;
+    	background-image: url("../../images/img2/atras1.jpg");
+		background-color:white;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		color:#1C0920;
+		text-align: center;
+		font-weight: 500;
+		text-shadow: 2px 2px 12px;
+		padding: 10em 0 8em 0;
+		cursor: default;
+	}
+
+
+
+
+
+
+
 
 	#header {
-		position: static;
-    	background-image: url("../../images/img2/back.jpg");
+		position: relative;
+    	background-image: url("../../images/img2/atras3.jpg");
 		background-color:white;
 		background-size: cover;
 		background-position: center;
@@ -2630,7 +2694,7 @@ input, select, textarea {
 	#banner {
 		background: #fff;
 		text-align: center;
-		padding: 4.5em 0 4.5em 0;
+		padding: 3em 0 4.5em 0;
 		margin-bottom: 0;
 	}
 
@@ -2690,10 +2754,6 @@ input, select, textarea {
 	
 }
 
-
-
-
-
 #footer2 {
 	position: relative;
 	overflow: hidden;
@@ -2717,9 +2777,10 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 2em 0 2em 0;
+		padding: 20px;
 		background-image: url(../../images/footerbg.png);
-		background-position: center center;
+		background-position: center;
+		background-size: cover;
 		color: #fff;
 	}
 
